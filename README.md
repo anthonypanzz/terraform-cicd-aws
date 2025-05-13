@@ -29,10 +29,10 @@ IAM: For creating users and roles with proper permissions.
 ---
 
 ## Implemental Steps
-Create an IAM User
+Created an IAM User
 Created an IAM user with programmatic access and full administrative permissions to manage AWS resources and interact with CodeBuild securely.
 
-Create and Clone GitHub Repository
+Created and Clone GitHub Repository
 Set up a GitHub repository to store all Terraform code, automation shell scripts, and build configurations.
 
 Write and Test Terraform Scripts
@@ -60,39 +60,39 @@ An EC2 instance configured to host a simple web app
 
 Verified the scripts locally using terraform init, plan, and apply.
 
-Create Automation Shell Scripts
+Created Automation Shell Scripts
 Added bash scripts to automate Terraform commands during the CodeBuild phase. The script handles init, validate, plan, and apply commands.
 ![Screenshot 2025-05-12 223650](https://github.com/user-attachments/assets/625fad5a-2cb1-4841-9088-985dc86e0567)
 
 ---
 
-Create buildspec.yml for CodeBuild
+Created buildspec.yml for CodeBuild
 ![Screenshot 2025-05-12 223740](https://github.com/user-attachments/assets/cf76813e-9354-4e2c-8958-de7c71f04e20)
 
 ---
 
 Defined the CodeBuild build phases (install and build) in a buildspec.yml file. This file instructs CodeBuild to:
 
-Install Terraform
+Installed Terraform
 ![Screenshot 2025-05-12 223721](https://github.com/user-attachments/assets/82a960e3-180b-4507-9971-1f6d38dd5354)
 
 ---
 
-Run shell scripts to provision infrastructure
+Ran shell scripts to provision infrastructure
 
-Generate GitHub Personal Access Token (PAT)
+Generated GitHub Personal Access Token (PAT)
 Created a PAT to allow AWS CodeBuild to authenticate with GitHub and pull the repository during build time.
 ![Screenshot 2025-05-12 223705](https://github.com/user-attachments/assets/cffa847d-9b90-428e-8e19-02b8df1253f0)
 
 ---
 
-Store Terraform State in S3
+Stored Terraform State in S3
 Configured Terraform to use an S3 bucket for storing the remote state file. This ensures state is preserved between builds and supports team collaboration.
 ![Screenshot 2025-05-12 225325](https://github.com/user-attachments/assets/409f19da-7290-40b8-9ace-0ebe6dc53a95)
 
 ---
 
-Create AWS CodeBuild Project
+Created AWS CodeBuild Project
 Configured a new CodeBuild project:
 
 Connected it to the GitHub repository using the PAT
