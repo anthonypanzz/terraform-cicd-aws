@@ -64,7 +64,7 @@ An EC2 instance configured to host a simple web app
 
 Verified the scripts locally using terraform init, plan, and apply.
 
-Created Automation Shell Scripts
+Created Automation Shell Scripts:
 Added bash scripts to automate Terraform commands during the CodeBuild phase. The script handles init, validate, plan, and apply commands.
 ![Screenshot 2025-05-12 223650](https://github.com/user-attachments/assets/625fad5a-2cb1-4841-9088-985dc86e0567)
 
@@ -84,7 +84,7 @@ Installed Terraform
 
 Ran shell scripts to provision infrastructure. 
 
-Generated GitHub Personal Access Token (PAT)
+Generated GitHub Personal Access Token (PAT):
 Created a PAT to allow AWS CodeBuild to authenticate with GitHub and pull the repository during build time.
 ![Screenshot 2025-05-12 223705](https://github.com/user-attachments/assets/cffa847d-9b90-428e-8e19-02b8df1253f0)
 
