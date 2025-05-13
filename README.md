@@ -33,13 +33,13 @@ IAM: For creating users and roles with proper permissions.
 ---
 
 ## Implemental Steps
-Created an IAM User
+Created an IAM User. 
 Created an IAM user with programmatic access and full administrative permissions to manage AWS resources and interact with CodeBuild securely.
 
-Created and Clone GitHub Repository
+Created and Clone GitHub Repository. 
 Set up a GitHub repository to store all Terraform code, automation shell scripts, and build configurations.
 
-Write and Test Terraform Scripts
+Write and Test Terraform Scripts. 
 Wrote modular and reusable Terraform code to provision:
 
 A VPC
