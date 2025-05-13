@@ -55,7 +55,7 @@ An EC2 instance configured to host a simple web app
 ![Screenshot 2025-05-12 225130](https://github.com/user-attachments/assets/97101332-4fda-4c5f-b488-b63c3c8da06f)
 ![Screenshot 2025-05-12 225212](https://github.com/user-attachments/assets/31abcc18-fca5-425b-bdfc-7f900c5e79fe)
 
-
+---
 
 
 Verified the scripts locally using terraform init, plan, and apply.
@@ -64,16 +64,19 @@ Create Automation Shell Scripts
 Added bash scripts to automate Terraform commands during the CodeBuild phase. The script handles init, validate, plan, and apply commands.
 ![Screenshot 2025-05-12 223650](https://github.com/user-attachments/assets/625fad5a-2cb1-4841-9088-985dc86e0567)
 
-
+---
 
 Create buildspec.yml for CodeBuild
 ![Screenshot 2025-05-12 223740](https://github.com/user-attachments/assets/cf76813e-9354-4e2c-8958-de7c71f04e20)
+
+---
 
 Defined the CodeBuild build phases (install and build) in a buildspec.yml file. This file instructs CodeBuild to:
 
 Install Terraform
 ![Screenshot 2025-05-12 223721](https://github.com/user-attachments/assets/82a960e3-180b-4507-9971-1f6d38dd5354)
 
+---
 
 Run shell scripts to provision infrastructure
 
@@ -81,9 +84,13 @@ Generate GitHub Personal Access Token (PAT)
 Created a PAT to allow AWS CodeBuild to authenticate with GitHub and pull the repository during build time.
 ![Screenshot 2025-05-12 223705](https://github.com/user-attachments/assets/cffa847d-9b90-428e-8e19-02b8df1253f0)
 
+---
+
 Store Terraform State in S3
 Configured Terraform to use an S3 bucket for storing the remote state file. This ensures state is preserved between builds and supports team collaboration.
 ![Screenshot 2025-05-12 225325](https://github.com/user-attachments/assets/409f19da-7290-40b8-9ace-0ebe6dc53a95)
+
+---
 
 Create AWS CodeBuild Project
 Configured a new CodeBuild project:
@@ -127,6 +134,8 @@ Version-controlled infrastructure using GitHub
 Scalable, repeatable, and fast deployments
 
 Secure handling of state files using S3
+
+---
 
 ## Conclusion
 This project illustrates how to integrate Terraform with AWS CodeBuild to create a seamless CI/CD pipeline for infrastructure automation. It promotes DevOps best practices by automating infrastructure changes through GitHub version control and AWS native tools, enabling faster and safer deployments.
