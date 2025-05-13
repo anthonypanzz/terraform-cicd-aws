@@ -1,6 +1,7 @@
 # Automatically Apply Terraform With AWS CodeBuild
 
-![Screenshot 2025-05-12 234935](https://github.com/user-attachments/assets/e035d80d-a3df-4238-8fc2-5f8ec9c831f0)
+![Screenshot 2025-05-12 235014](https://github.com/user-attachments/assets/681467cd-0347-40d8-bfb6-74d9d5505204)
+
 
 
 ## Project Description
