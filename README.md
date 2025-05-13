@@ -1,4 +1,4 @@
-## Automatically Apply Terraform With AWS CodeBuild
+# Automatically Apply Terraform With AWS CodeBuild
 
 ## Project Description
 This DevOps project demonstrates how to automatically deploy AWS infrastructure using Terraform and AWS CodeBuild. The primary goal is to integrate Infrastructure as Code (IaC) into a CI/CD pipeline that provisions resources on AWS with no manual intervention.
