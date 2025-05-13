@@ -8,7 +8,7 @@ provider "aws" {
 # store the terraform state file in s3
 terraform {
   backend "s3" {
-    bucket  = "apanz-terraform-remote-state"
+    bucket  = "apanz-terraform-state-bucket"
     key     = "build/terraform.tfstate"
     region  = "us-east-1"
     profile = "eks-user"
