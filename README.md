@@ -13,6 +13,8 @@ An EC2 instance to host a web application
 
 This approach enables a fully automated and version-controlled infrastructure provisioning workflow, increasing deployment speed, consistency, and scalability.
 
+---
+
 ## Key Components
 Terraform: For defining and provisioning AWS infrastructure as code.
 
@@ -23,6 +25,8 @@ GitHub: Source control for storing Terraform code and automation scripts.
 S3: To store the remote state file for Terraform.
 
 IAM: For creating users and roles with proper permissions.
+
+---
 
 ## Implemental Steps
 Create an IAM User
@@ -73,10 +77,14 @@ Pointed to the buildspec.yml for instructions
 
 Assigned an IAM role with permissions to access EC2, VPC, S3, and GitHub
 
+---
+
 ## Final Outcome
 With all components in place, any change committed to the GitHub repository now triggers AWS CodeBuild. CodeBuild automatically pulls the latest Terraform code, executes it, and applies the infrastructure changes on AWS.
 
 This automation streamlines the infrastructure provisioning process, eliminates manual errors, and supports rapid DevOps practices by enabling consistent and repeatable deployments.
+
+---
 
 ## Key Benefits
 Infrastructure as Code (IaC) automation
