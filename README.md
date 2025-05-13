@@ -82,7 +82,7 @@ Installed Terraform
 
 ---
 
-Ran shell scripts to provision infrastructure
+Ran shell scripts to provision infrastructure. 
 
 Generated GitHub Personal Access Token (PAT)
 Created a PAT to allow AWS CodeBuild to authenticate with GitHub and pull the repository during build time.
@@ -90,13 +90,13 @@ Created a PAT to allow AWS CodeBuild to authenticate with GitHub and pull the re
 
 ---
 
-Stored Terraform State in S3
+Stored Terraform State in S3:
 Configured Terraform to use an S3 bucket for storing the remote state file. This ensures state is preserved between builds and supports team collaboration.
 ![Screenshot 2025-05-12 225325](https://github.com/user-attachments/assets/409f19da-7290-40b8-9ace-0ebe6dc53a95)
 
 ---
 
-Created AWS CodeBuild Project
+Created AWS CodeBuild Project:
 Configured a new CodeBuild project:
 
 Connected it to the GitHub repository using the PAT
